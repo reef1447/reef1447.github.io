@@ -1,1 +1,1 @@
-# kokusei-web
+# sus
