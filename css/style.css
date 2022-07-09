@@ -1,0 +1,303 @@
+* {
+	font-family: 'Helvetica Neueu', Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: "Lato-Regular";
+	src: url('polices/Lato-Regular.ttf');
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: black;
+	display: block;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: auto !important;
+	width: 100%;
+	background-color: #232830;
+	scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  /* This is the magic bit for WebKit */
+  display: none;
+}
+
+a:hover, a:focus {
+	color: inherit;
+}
+
+@keyframes float {
+	0% {
+
+		transform: translatey(0px);
+	}
+	50% {
+
+		transform: translatey(-20px);
+	}
+	100% {
+
+		transform: translatey(0px);
+	}
+}
+
+#swal2-content {
+	font-size: 15px;
+}
+
+.swal2-actions {
+	font-size: 15px;
+}
+
+.bigavatar {
+    transform: translatey(0px);
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100px;
+}
+
+.toptext h1 {
+	color: #1972F5;
+	font: 700 48px Times New Roman, Times, serif;
+	font-size: 50px;
+}
+
+.toptext h3 {
+	color: white;
+}
+
+footer {
+	bottom: 0;
+  position: relative;
+  background: rgba(255, 255, 255, .05);
+  width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 100%;
+}
+
+.swal2-styled.swal2-confirm {
+	background-color: #195FF5;
+}
+
+@media screen and (max-height: 800px) , screen and (max-width: 700px) {
+	.toptext h1 {
+		font-size: 40px;
+	}
+
+	.icon a i {
+		font-size: 20px;
+		padding: 7px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.wb_button {
+		width: 100px !important;
+	}
+
+	.toptext h3 span {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.top {
+		padding: 20px !important;
+	}
+}
+
+.pink {
+	color: #1972F5;
+}
+
+.blue {
+	color: #1972F5;
+}
+
+footer span {
+	color: white;
+	padding: 5px;
+}
+
+.wb_button {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    width: 198px;
+    height: 42px;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 14px;
+    text-align: center;
+    border: 2px solid #195FF5;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #1972F5 none repeat left top;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+		transition: 0.3s;
+}
+
+.wb_button:hover {
+    background-color: white;
+}
+
+.wb_button span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 300%;
+}
+
+.toptext {
+	text-align: center;
+}
+
+.topbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbuttons div {
+	padding: 5px;
+}
+
+.stats img {
+  display: block;
+  margin: auto;
+  width: 300px;
+  margin: -40px auto -30px auto;
+  overflow: hidden;
+}
+
+.stats {
+  overflow: hidden;
+}
+
+.haut {
+  margin: 300px;
+  color: black;
+  padding: 10px;
+}
+
+.top {
+	padding: 30px;
+}
+
+.block {
+	display: block;
+}
+
+.icon {
+	padding: 20px;
+}
+
+a {
+	color: white;
+	font-weight: bold !important;
+}
+
+.icon a i {
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+	background-color: #232830;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+.icon a i:hover {
+	cursor: pointer;
+}
+
+.github a i:hover {
+	background-color: black;
+}
+
+.patreon a i:hover {
+	background-color: rgb(249, 104, 84);
+}
+
+.paypal a i:hover {
+	background-color: #195FF5;
+}
+
+.docs a i:hover {
+	background-color: #7289da;
+}
+
+.links {
+	display: flex;
+}
+
+.stats {
+	margin: 10px;
+}
+
+.mainblock {
+	margin-top: 5%;
+}
+
+#canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -5;
+	opacity: 0.1;
+	top: 0;
+	left: 0;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+.github-corner {
+	cursor: pointer;
+}
+
+@keyframes octocat-wave {
+
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}
